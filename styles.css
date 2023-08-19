@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --open-sans: 'Open Sans', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --seagreen: rgb(20,191,152);
+    --teal: rgb(17,52,72);
+    --light-teal: rgb(21,62,82);
+    --smoky-white: rgb(223,229,227);
+    --dark-grey: rgb(72,74,70);
+    --light-grey: rgb(120,121,118);
+}
+html{
+    scroll-behavior: smooth;
+    height: 1500px;
+}
+h1,h2,h3,h4,h5,h6,button{
+    font-family: var(--montserrat);
+}
+/*------------------nav-------------------*/
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--teal); 
+    /* background-color: transparent; */
+    padding: 0 80px;
+    /* margin-top: 30px; */
+    position: fixed;
+    z-index: 5;
+}
+nav img{
+    width: 115px;
+    height: 45px;
+    margin-top: 5px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 28px;
+}
+nav ul li{
+    font-family: var(--open-sans);
+    font-size: 18px;
+    gap: 40px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+#drop-down{
+    font-size: 10px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+nav li a:hover{
+    color: var(--seagreen);
+}
+nav li a:active{
+    color: var(--seagreen);
+}
+nav .nav-social{
+    gap: 10px;
+}
+.nav-social i{
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--seagreen);
+    width: 28px;
+    height: 25px;
+    text-align: center;
+    padding: 7px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.nav-social i:hover{
+    color: var(--seagreen);
+    background-color: white;
+}
+/*-----------------home---------------------*/
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(./Assets/header-background.jpg);
+    width: 100%;
+    min-height: 900px;
+    background-position: center 0%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home .container{
+    /* border: 2px solid red; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.home h1{
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+    color: white;
+}
+.home .words:before {
+	content: "";
+	animation-name: replacement;
+	animation-duration: 6s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes replacement {
+	0% {
+		content: "TEMPLATE";
+	}
+    50%{
+        content: "SERVICES";
+    }
+	100% {
+		content: "SOLUTIONS";
+	}
+}
+.home p{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    font-family: var(--open-sans);
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--smoky-white);
+    margin-top: 10px;
+}
+.home a{
+    font-family: var(--montserrat);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 135px;
+    height: 48px;
+    background-color: var(--seagreen);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--seagreen);
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.home a:hover{
+    color: var(--seagreen);
+    background-color: transparent;
+}  
+/*-----------------intro------------------*/
+.intro{
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 100px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro .container{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.intro .text{
+    /* border: 2px solid blue; */
+    width: 42%;
+    text-align: left;
+}
+.intro .text h5{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--seagreen);
+    margin-bottom: 10px;
+}
+.intro .text h1{
+    width: 90%;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 18px;
+}
+.intro .text p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--light-grey);
+    font-family: var(--open-sans);
+    margin-bottom: 18px;
+}
+.intro .text .para{
+    font-style: italic;
+}
+.intro .text h3{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--dark-grey);
+}
+
+.intro .image{
+    /* border: 2px solid brown; */
+    width: 65%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+
+.intro .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    float: right;
+    object-fit: fill;
+    transition: 0.25s ease-in-out;
+}
+.intro .image img:hover{
+    transform: scale(1.15);
+}
+.intro .cards{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.intro .card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.intro .card .hex{
+    width: 100px;
+    height: 90px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: var(--seagreen);
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#list-icon{
+    height: 28px;
+    width: 30px;
+    background-color: white;
+    border-radius: 2px;
+    color: var(--seagreen);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pie-chart{
+    font-size: 36px;
+}
+.intro .card h1{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--dark-grey);   
+}
+.intro .card p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    color: var(--light-grey);
+}
