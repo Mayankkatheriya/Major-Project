@@ -17,6 +17,7 @@
 html{
     scroll-behavior: smooth;
     height: 1500px;
+    overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6,button{
     font-family: var(--montserrat);
@@ -179,7 +180,7 @@ nav .nav-social{
 .intro .container{
     /* border: 2px solid yellow; */
     width: 100%;
-    max-width: 1500px;
+    max-width: 1160px;
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: row;
@@ -248,7 +249,7 @@ nav .nav-social{
 .intro .cards{
     /* border: 2px solid red; */
     width: 100%;
-    max-width: 1500px;
+    max-width: 1160px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
