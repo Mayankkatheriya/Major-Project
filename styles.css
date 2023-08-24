@@ -570,10 +570,42 @@ nav .nav-social{
     line-height: 1.5625rem;
     font-family: var(--open-sans);
     color: var(--light-grey);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .services .row-3 a{
     color: var(--seagreen);
+}
+.service .row-3 .progress-container{
+    margin-top: 1.5rem;
+}
+.services .row-3 .progress-container .topic {
+    margin-bottom: 0.25rem;
+    color: #484a46;
+    font: 600 0.875rem/1.25rem var(--open-sans);
+}
+.services .row-3 .progress {
+    height: 1.375rem;
+    margin-bottom: 1.125rem;
+    border-radius: 0.125rem;
+    background-color: #f9fafc;
+    overflow: hidden;
+    font-size: 0.75rem;
+}
+.services .row-3 .progress-bar {
+    display: block;
+    padding-left: 1.5rem;
+    border-radius: 0.125rem;
+    background: linear-gradient(to bottom right,#14bf98,#1bd1a7);
+    height: 100%;
+}
+.services .row-3 .first {
+    width: 100%;
+}
+.services .row-3 .second {
+    width: 76%;
+}
+.services .row-3 .third {
+    width: 90%;
 }
 /* -------------------textimonial------------------ */
 .services .testmonials{
