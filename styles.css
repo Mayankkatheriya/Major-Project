@@ -704,7 +704,7 @@ nav .nav-social{
     margin-right: 1.75rem;
     margin-left: 3rem;
 }
-.call-me .section-title{
+.section-title{
     margin-bottom: 0.5rem;
     color: var(--seagreen);
     font: 500 0.8125rem/1.125rem var(--montserrat);
@@ -775,16 +775,18 @@ li{
     padding-top: 1.25rem;
     padding-bottom: 0.25rem;
     padding-left: 1.3125rem;
-    border: 1px solid #dadada;
+    border: 1px solid #2a5d77;
     border-radius: 0.25rem;
-    background-color: #fff;
     color: #787976;
     font: 400 0.875rem/1.375rem var(--open-sans);
 }
 .call-me .form-control-input, .call-me .form-control-select{
-    border: 1px solid #39728f;
     background-color: #2a5d77;
     color: white;
+    outline: none;
+}
+.call-me .form-control-input:hover, .call-me .form-control-select:hover{
+    border: 1px solid #dadada;
 }
 .label-control {
     position: absolute;
@@ -836,3 +838,129 @@ a.white{
     background-color: transparent;
 }
 /*-----------------------Projects--------------------*/
+.projects{
+    padding-top: 6.5rem;
+    padding-bottom: 7rem;
+}
+.projects .container{
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.projects .row-1 {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.project .col{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.projects h2, .projects .section-title {
+    text-align: center;
+}
+.projects h2{
+    margin-bottom: 3.25rem;
+    color: var(--dark-grey);
+    font: 700 1.75rem/2.125rem var(--montserrat);
+}
+.projects .row-2 {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.projects input{
+    display: none;
+}
+.projects .top-content {
+    text-align: center;
+}
+.projects .top-content label {
+    display: inline-block;
+    margin-right: 0.1875rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1875rem;
+    padding: 0.3125rem 1.375rem 0.25rem 1.375rem;
+    border-radius: 0.25rem;
+    background-color: #f1f4f7;
+    color: var(--light-grey);
+    font: 700 0.75rem/1.25rem var(--montserrat);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.projects .top-content .selected{
+    background-color: var(--seagreen);
+    color: white;
+}
+.projects .top-content label:hover{
+    background-color: var(--seagreen);
+    color: white;
+}
+.projects .photo-gallery{
+    height: 540px;
+    margin-top: 1.25rem;
+    border-radius: 0.375rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.projects .photo-gallery .pic{
+    position: relative;
+    overflow: hidden;
+}
+.projects .photo-gallery img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+.projects .photo-gallery .pic span{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 25%;
+    transition: 0.5s;
+    color: white;
+    font: 700 1.125rem/1.625rem var(--montserrat);
+    opacity: 0;
+}
+.projects .photo-gallery img:hover{
+    transform: scale(1.1);
+    filter: brightness(60%);
+}
+.projects .photo-gallery .pic:hover span{
+    opacity: 1;
+}
+#check1:checked ~ .row-2 .photo-gallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked ~ .row-2 .photo-gallery .design{
+    opacity: 1;
+    position: relative;
+    transform: scale(1);
+}
+#check2:checked ~ .row-2 .photo-gallery .development,
+#check2:checked ~ .row-2 .photo-gallery .marketing,
+#check2:checked ~ .row-2 .photo-gallery .seo{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
