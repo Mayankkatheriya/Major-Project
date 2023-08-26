@@ -77,7 +77,7 @@ Styles the "hamburger" icon with a white color and larger font size.\
 * HTML:
 The code represents a section with the class "home" and the ID "home." Inside this section, there is a container containing a heading, a paragraph describing the company's focus, and a link labeled "Discover" that directs to another section with the ID "intro."
 
-*CSS:
+* CSS:
 
 Background: Uses a gradient overlay and image. Minimum height of 900px. Content is centered.
 
@@ -93,3 +93,21 @@ Button: Teal background, white text, borders, rounded corners. Changes on hover.
 
 This code creates an attractive home section with dynamic text and styled content.\
 ![image](https://github.com/Mayankkatheriya/Major-Project-CSS/assets/128832286/7d0ba64b-18ca-4fcf-b47e-5d561dd479e1)
+
+* HTML:
+The code represents a section with the class "intro" and the ID "intro." Inside this section, there is a container containing two main parts. The first part includes a block of text with a subheading, a main heading describing business growth services, a couple of paragraphs explaining the challenges of starting or growing a business, a quote attributed to the CEO, and the CEO's name.
+
+The second part contains a set of three cards, each representing a stage in the business growth process. Each card includes an icon, a heading describing the stage, and a paragraph providing information about that stage. The stages are "Environment Analysis," "Development Planning," and "Execution & Evaluation." Each card is enclosed in a hexagonal shape.
+
+* CSS:
+Layout: Uses flexbox for alignment and responsiveness. Content is centered and wrapped.
+
+Container: Contains text and image elements. Max width is 1160px. Uses flexbox for spacing.
+
+Text Section: Left-aligned. Styled with different headings, paragraphs, and italic text.
+
+Image Section: Right-aligned. Includes an image with hover effect.
+
+Cards Section: Max width of 1160px. Contains individual card elements.
+
+Card Styles: Each card is a column layout with a hexagon icon, title, and description.
