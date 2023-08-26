@@ -1477,7 +1477,7 @@ footer .col-2 {
   margin: auto;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   html {
     overflow-x: hidden;
   }
@@ -1582,7 +1582,7 @@ footer .col-2 {
     text-align: center;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1021px) {
   nav .fa-bars {
     display: none;
   }
