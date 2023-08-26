@@ -540,8 +540,8 @@ nav .fa-bars {
 .services .row-3 {
   /* border: 2px solid red; */
   width: 100%;
-  height: 34.625rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   background-color: white;
 }
@@ -1510,17 +1510,20 @@ footer .col-2 {
     margin: auto;
     align-items: center;
   }
-  .services .row-2 {
+  .services .row-2,
+  .services .row-3 {
     height: auto;
   }
   .services .row-2 .image,
   .services .row-3 .image {
-    display: none;
+    width: 100%;
+    height: 36rem;
   }
   .services .row-2 .details,
   .services .row-3 .details {
     width: 100%;
     padding: 1rem;
+    margin-top: -5rem;
   }
   .services .row-2 .details .container,
   .services .row-3 .details .container {
