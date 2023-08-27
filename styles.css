@@ -1481,6 +1481,9 @@ footer .col-2 {
   html {
     overflow-x: hidden;
   }
+  body{
+    overflow-x: hidden;
+  }
   .back-to-top {
     display: none;
   }
@@ -1613,5 +1616,16 @@ footer .col-2 {
   footer .col-2 {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .back-to-top {
+    display: none;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
